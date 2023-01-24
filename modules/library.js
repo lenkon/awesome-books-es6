@@ -36,6 +36,7 @@ class Library {
     const title = document.getElementById('title');
     const author = document.getElementById('author');
     if (title.value.length > 0 && author.value.length > 0) {
+      this.bookData = this.bookData || [];
       this.bookData.push({
         title: title.value,
         author: author.value,
